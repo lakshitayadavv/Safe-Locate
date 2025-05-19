@@ -9,7 +9,7 @@ export default function DashboardPage() {
       <Card className="bg-primary/10 border-primary/30">
         <CardHeader>
           <CardTitle className="text-3xl font-bold text-primary flex items-center gap-2">
-             Welcome to Guardian Angel
+             Welcome to Safe Locate
           </CardTitle>
           <CardDescription className="text-lg text-primary-foregroundbrightness-200">
             Your safety is our priority. Request assistance or alert emergency contacts with a single tap.

@@ -7,7 +7,7 @@ export function Header() {
       <div className="container mx-auto px-4 py-3 flex items-center justify-between">
         <Link href="/" className="flex items-center gap-2 text-primary hover:opacity-80 transition-opacity">
           <Shield className="w-8 h-8" />
-          <h1 className="text-2xl font-bold">Guardian Angel</h1>
+          <h1 className="text-2xl font-bold">Safe Locate</h1>
         </Link>
         <nav className="flex items-center gap-3 sm:gap-4">
           <Link href="/" className="text-foreground hover:text-primary transition-colors p-2 rounded-md flex items-center gap-1 text-sm sm:text-base" aria-label="Home">

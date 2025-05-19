@@ -8,8 +8,8 @@ const geistSans = GeistSans;
 const geistMono = GeistMono;
 
 export const metadata: Metadata = {
-  title: 'Guardian Angel',
-  description: 'Assisting women in distress by providing an immediate connection to local law enforcement.',
+  title: 'Safe Locate',
+  description: 'Assisting individuals in distress by providing an immediate connection to local law enforcement and location services.',
 };
 
 export default function RootLayout({

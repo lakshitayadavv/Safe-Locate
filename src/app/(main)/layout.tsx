@@ -12,7 +12,7 @@ export default function MainAppLayout({
         {children}
       </main>
       <footer className="bg-card text-center p-4 text-sm text-muted-foreground border-t">
-        Guardian Angel &copy; {new Date().getFullYear()} - Your safety, our priority.
+        Safe Locate &copy; {new Date().getFullYear()} - Your safety, our priority.
       </footer>
     </div>
   );
