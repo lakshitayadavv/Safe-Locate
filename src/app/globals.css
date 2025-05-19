@@ -8,33 +8,33 @@ body {
 
 @layer base {
   :root {
-    --background: 230 25% 94.1%; /* #E8EAF6 */
-    --foreground: 222.2 84% 4.9%;
+    --background: 330 70% 95%; /* Light Pink */
+    --foreground: 300 15% 30%; /* Dark Mauve */
 
-    --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card: 0 0% 100%; /* White */
+    --card-foreground: 300 15% 30%; /* Dark Mauve */
 
     --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover-foreground: 300 15% 30%;
 
-    --primary: 231 48% 48%; /* #3F51B5 */
-    --primary-foreground: 0 0% 98%;
+    --primary: 300 15% 45%; /* Desaturated Purple/Mauve */
+    --primary-foreground: 330 70% 95%; /* Light Pink */
 
-    --secondary: 230 30% 90%; /* Slightly darker than background for secondary elements */
-    --secondary-foreground: 222.2 84% 4.9%;
+    --secondary: 330 50% 90%; /* Slightly darker pink */
+    --secondary-foreground: 300 15% 30%;
 
-    --muted: 230 20% 85%; /* Muted elements, slightly darker */
-    --muted-foreground: 222.2 40% 30%; /* Muted text */
+    --muted: 330 40% 85%;
+    --muted-foreground: 300 15% 50%; /* Muted text */
 
-    --accent: 291 64% 42%; /* #9C27B0 */
+    --accent: 300 20% 55%; /* Slightly more vibrant purple */
     --accent-foreground: 0 0% 98%;
 
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 0 0% 98%;
+    --destructive: 300 15% 45%; /* Match primary for EMERGENCY button */
+    --destructive-foreground: 330 70% 95%; /* Match primary-foreground */
 
-    --border: 230 20% 80%; /* Border color */
-    --input: 230 20% 88%; /* Input background */
-    --ring: 231 48% 48%; /* Focus ring, same as primary */
+    --border: 300 20% 80%; /* Border color */
+    --input: 300 40% 90%; /* Input background */
+    --ring: 300 20% 55%; /* Focus ring */
 
     --radius: 0.5rem;
 
@@ -56,33 +56,33 @@ body {
 
   .dark {
     /* Basic dark theme, can be customized further if needed */
-    --background: 222.2 84% 4.9%;
-    --foreground: 210 40% 98%;
+    --background: 300 10% 10%; /* Dark Mauve/Purple Background */
+    --foreground: 330 40% 80%; /* Lighter Pink/Mauve Text */
 
-    --card: 222.2 84% 4.9%;
-    --card-foreground: 210 40% 98%;
+    --card: 300 10% 15%; /* Slightly Lighter Card BG */
+    --card-foreground: 330 40% 80%;
 
-    --popover: 222.2 84% 4.9%;
-    --popover-foreground: 210 40% 98%;
+    --popover: 300 10% 15%;
+    --popover-foreground: 330 40% 80%;
 
-    --primary: 231 48% 48%; 
-    --primary-foreground: 0 0% 98%;
+    --primary: 300 20% 55%; /* Accent Purple from light theme */
+    --primary-foreground: 0 0% 98%; /* White text */
 
-    --secondary: 217.2 32.6% 17.5%;
-    --secondary-foreground: 210 40% 98%;
+    --secondary: 300 10% 20%;
+    --secondary-foreground: 330 40% 80%;
 
-    --muted: 217.2 32.6% 17.5%;
-    --muted-foreground: 215 20.2% 65.1%;
+    --muted: 300 10% 20%;
+    --muted-foreground: 330 30% 60%;
 
-    --accent: 291 64% 42%;
+    --accent: 300 25% 65%; /* Brighter Accent */
     --accent-foreground: 0 0% 98%;
 
-    --destructive: 0 62.8% 30.6%;
+    --destructive: 300 20% 55%; 
     --destructive-foreground: 0 0% 98%;
 
-    --border: 217.2 32.6% 17.5%;
-    --input: 217.2 32.6% 17.5%;
-    --ring: 231 48% 48%;
+    --border: 300 10% 25%;
+    --input: 300 10% 20%;
+    --ring: 300 20% 55%;
     
     --chart-1: 220 70% 50%;
     --chart-2: 160 60% 45%;
@@ -117,7 +117,7 @@ body {
 }
 
 /* Pulse animation for SOS button */
-.pulse-blue {
+.pulse-blue { /* This will now use the --primary color which is mauve */
   box-shadow: 0 0 0 0 hsl(var(--primary) / 0.7);
   animation: pulse-blue-animation 2s infinite;
 }
@@ -134,7 +134,7 @@ body {
   }
 }
 
-.pulse-accent {
+.pulse-accent { /* This will use the new --accent color */
   box-shadow: 0 0 0 0 hsl(var(--accent) / 0.7);
   animation: pulse-accent-animation 2s infinite;
 }
