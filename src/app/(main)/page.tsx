@@ -54,7 +54,7 @@ export default function DashboardPage() {
         <ActionButton
           icon={<Building2 />}
           label="Nearby Stations"
-          href="#" // Placeholder link
+          href="/nearby-stations" 
         />
       </div>
       
