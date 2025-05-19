@@ -1,8 +1,8 @@
+
 import Link from 'next/link';
-import Image from 'next/image';
+import * as React from 'react';
 import { Button } from '@/components/ui/button';
 import { MapPin, Building2, Car, ShieldAlert } from 'lucide-react';
-import * as React from 'react';
 
 // Helper component for circular action buttons
 interface ActionButtonProps {
@@ -29,15 +29,32 @@ export default function DashboardPage() {
     <div className="flex flex-col items-center justify-center min-h-full py-12 px-4 text-center space-y-10">
       {/* Top Logo and App Name */}
       <div className="flex flex-col items-center space-y-3">
-        <div className="bg-primary rounded-full p-3 shadow-md">
-          <Image 
-            src="https://placehold.co/80x80.png" 
-            alt="Safe Locate Logo" 
-            width={80} 
-            height={80} 
-            data-ai-hint="officer silhouette" 
-            className="rounded-full" 
-          />
+        <div className="p-1">
+          <svg
+            width="80"
+            height="80"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            aria-label="Safe Locate Logo Icon"
+          >
+            {/* Pin shape - Maroon */}
+            <path
+              d="M12 2C7.58172 2 4 5.58172 4 10C4 17 12 23 12 23C12 23 20 17 20 10C20 5.58172 16.4183 2 12 2Z"
+              fill="hsl(var(--primary))"
+            />
+            {/* Inner circle for silhouette background - Light Pink */}
+            <circle cx="12" cy="9.5" r="4.5" fill="hsl(var(--secondary))" />
+            {/* Officer Silhouette - Maroon */}
+            {/* Cap Top */}
+            <ellipse cx="12" cy="6.8" rx="1.6" ry="0.7" fill="hsl(var(--primary))" />
+            {/* Cap Brim */}
+            <rect x="10" y="7.3" width="4" height="0.5" rx="0.2" fill="hsl(var(--primary))" />
+            {/* Head */}
+            <circle cx="12" cy="8.5" r="1.3" fill="hsl(var(--primary))" />
+            {/* Body */}
+            <path d="M10.0 10.0H14.0L13.5 12.5H10.5L10.0 10.0Z" fill="hsl(var(--primary))" />
+          </svg>
         </div>
         <h1 className="text-3xl font-bold text-foreground tracking-wider">
           SAFE LOCATE
@@ -54,10 +71,10 @@ export default function DashboardPage() {
         <ActionButton
           icon={<Building2 />}
           label="Nearby Stations"
-          href="/nearby-stations" 
+          href="/nearby-stations"
         />
       </div>
-      
+
       {/* Request Ride Button - Centered below the two */}
       <div className="w-full flex justify-center">
         <ActionButton
